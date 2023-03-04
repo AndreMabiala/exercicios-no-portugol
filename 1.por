@@ -3,17 +3,19 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro quantidadevalores = 3
-		real numeros[quantidadevalores]
-		real somatorio = 0.0
-		para(inteiro contador = 0; contador < quantidadevalores; contador++){
-			escreva ("Digite um numero: ")
-			leia ( numeros[contador])
+		cadeia nome 
+	inteiro numero[10]
+	inteiro contador = 0
+	inteiro soma = 0
+	escreva ("Digite seu nome: ")
+	leia (nome)
 
-			somatorio = somatorio + numeros[contador]
-		}
-		real  media = somatorio / quantidadevalores
-			escreva ("A media e: " + media)
+	enquanto(contador <10){
+		escreva ("Digite o numero: ")
+		leia (numero[contador])
+		
+		soma = numero[contador]+soma 
+		contador++
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -21,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 368; 
+ * @POSICAO-CURSOR = 288; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
